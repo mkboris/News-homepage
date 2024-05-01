@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Stay updated with the latest in tech, gaming, and more on our homepage. Discover articles on Web 3.0, hydrogen vs. electric cars, AI artistry, and VC funding. Engaging insights await!"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Frontend Mentor | News homepage</title>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#"
+        ><img src="assets/images/logo.svg" alt="logo" class="logo hide"
+      /></a>
+
+      <!-- Desktop Menu -->
+      <nav class="nav">
+        <ul class="nav-menu">
+          <li><a href="#" class="nav-links">Home</a></li>
+          <li><a href="#" class="nav-links">New</a></li>
+          <li><a href="#" class="nav-links">Popular</a></li>
+          <li><a href="#" class="nav-links">Trending</a></li>
+          <li><a href="#" class="nav-links">Categories</a></li>
+        </ul>
+
+        <!-- Hamburger Button -->
+        <div class="btn-container">
+          <button
+            aria-label="Toggle Mobile Menu"
+            aria-expanded="false"
+            aria-controls="content"
+            id="menu-btn"
+            type="button"
+            class="hamburger"
+          >
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="content" class="mobile-menu hidden">
+          <ul class="nav-menu-mobile">
+            <li>
+              <a class="nav-links-mobile" href="#">Home</a>
+            </li>
+            <li>
+              <a class="nav-links-mobile" href="#">New</a>
+            </li>
+            <li>
+              <a class="nav-links-mobile" href="#">Popular</a>
+            </li>
+            <li>
+              <a class="nav-links-mobile" href="#">Trending</a>
+            </li>
+            <li>
+              <a class="nav-links-mobile" href="#">Categories</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main hide">
+      <div class="grid-container">
+        <picture class="items hero">
+          <source
+            media="(min-width: 37.5rem)"
+            srcset="assets/images/image-web-3-desktop.jpg"
+          />
+          <img
+            src="assets/images/image-web-3-mobile.jpg"
+            alt=""
+            role="presentation"
+            class="hero-img"
+          />
+        </picture>
+
+        <div class="items heading">
+          <h1 class="main-heading">The Bright Future of Web 3.0?</h1>
+        </div>
+
+        <div class="items para-btn">
+          <p class="paragraph main-p">
+            We dive into the next evolution of the web that claims to put the
+            power of the platforms back into the hands of the people. But is it
+            really fulfilling its promise?
+          </p>
+          <a href="#" class="btn">Read more</a>
+        </div>
+
+        <div class="items new">
+          <h2 class="sec-heading">New</h2>
+
+          <div class="h3-paragraph">
+            <a href="#"
+              ><h3 class="ter-heading">Hydrogen VS Electric Cars</h3></a
+            >
+            <p class="paragraph ter-p">
+              Will hydrogen-fueled cars ever catch up to EVs?
+            </p>
+          </div>
+
+          <hr />
+
+          <div class="h3-paragraph">
+            <a href="#">
+              <h3 class="ter-heading">The Downsides of AI Artistry</h3>
+            </a>
+            <p class="paragraph ter-p">
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+          </div>
+
+          <hr />
+
+          <div class="h3-paragraph">
+            <a href="#">
+              <h3 class="ter-heading">Is VC Funding Drying Up?</h3>
+            </a>
+            <p class="paragraph ter-p">
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
+            </p>
+          </div>
+        </div>
+
+        <div class="items retro1">
+          <div class="img-text">
+            <img
+              src="assets/images/image-retro-pcs.jpg"
+              alt="a retro computer"
+              class="bottom-img"
+            />
+            <div class="text">
+              <p class="numbers">01</p>
+              <a href="#"> <h4 class="sm-heading">Reviving Retro PCs</h4> </a>
+              <p class="paragraph">
+                What happens when old PCs are given modern upgrades?
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="items retro2">
+          <div class="img-text">
+            <img
+              src="assets/images/image-top-laptops.jpg"
+              alt="a keyboard close up image"
+              class="bottom-img"
+            />
+            <div class="text">
+              <p class="numbers">02</p>
+              <a href="#">
+                <h4 class="sm-heading">Top 10 Laptops of 2022</h4>
+              </a>
+              <p class="paragraph">
+                Our best picks for various needs and budgets.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="items retro3">
+          <div class="img-text">
+            <img
+              src="assets/images/image-gaming-growth.jpg"
+              alt="hand stretching outwards and a gaming controller floating over"
+              class="bottom-img"
+            />
+            <div class="text">
+              <p class="numbers">03</p>
+              <a href="#"><h4 class="sm-heading">The Growth of Gaming</h4></a>
+              <p class="paragraph">
+                How the pandemic has sparked fresh opportunities.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
