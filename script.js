@@ -19,3 +19,5 @@ function navToggle() {
   const isMenuHidden = menu.classList.contains("hidden");
   btn.setAttribute("aria-expanded", isMenuHidden ? "false" : "true");
 }
+
+overlay.addEventListener("click", navToggle);
