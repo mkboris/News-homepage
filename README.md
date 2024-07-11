@@ -1,7 +1,5 @@
 # Frontend Mentor - News homepage solution
 
-This is a solution to the [News homepage challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
-
 ## Table of contents
 
 - [Overview](#overview)
@@ -13,7 +11,6 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-
 
 ## Overview
 
@@ -56,5 +53,3 @@ Users should be able to:
 ## Author
 
 - Frontend Mentor - [@mkboris](https://www.frontendmentor.io/profile/mkboris)
-
-
