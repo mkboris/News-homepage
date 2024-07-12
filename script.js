@@ -14,6 +14,7 @@ function navToggle() {
   btn.classList.toggle("open");
   menu.classList.toggle("hidden");
   overlay.classList.toggle("hide");
+  removeOverlay();
 
   // Update the aria-expanded attribute of the menu button based on the menu's visibility
   const isMenuHidden = menu.classList.contains("hidden");
@@ -21,3 +22,12 @@ function navToggle() {
 }
 
 overlay.addEventListener("click", navToggle);
+
+const removeOverlay = () => {
+  const overlay = document.querySelector(".overlay");
+  if (window.innerWidth > 500) {
+    overlay.classList.add("hide");
+  }
+};
+
+window.addEventListener("resize", removeOverlay);
